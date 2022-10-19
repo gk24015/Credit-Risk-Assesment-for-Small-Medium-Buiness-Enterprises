@@ -1,0 +1,60 @@
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Prediction Portal</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css">
+  <link rel="stylesheet" href="/stylesheets/main.css">
+  
+  <link rel="shortcut icon" href="#">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.2.0/socket.io.dev.js"></script>
+</head>
+
+<body> 
+    <nav class="navbar navbar-default">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                  <span class="sr-only">Toggle navigation</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                </button>
+  
+                <a class="navbar-brand" href="/">Loanometer</a>
+            </div>
+        </div>
+    </nav> 
+    <header class="jumbotron " id="t2">
+        <div class="container" >
+            <h1><span class="glyphicon glyphicon-user"></span><b> Welcome To The Portal!</b></h1>
+            <p>View the probability of company going to default</p>
+            <div class="row">
+                
+                <div style="width: 30%; margin: 25px auto;">
+                        <div class="form-group">
+                            <!-- 50% -->
+                            <label for="cc_num"><button class="btn btn-lg btn-info btn-block">Bankmeter says {{pred}} %  </button></label>
+                            <br>
+                         <div class="form-group"><label for="cc_num"><button class="btn btn-lg btn-info btn-block">Paydex Meter says 86(credit score)       </button></label></div>
+                         <div class="form-group"><label for="cc_num"><button class="btn btn-lg btn-warning btn-block">Net Credit Risk Assement Score is  92.5  </button></label></div>
+                        </div>
+               
+            </div>
+            <p>
+               <a class="btn btn-success btn-lg" href="/">Go Back</a>
+            </p>
+             <p>
+             
+            </p>
+        </div>
+    </header>
+ 
+   
+</div>
+
+</body>
+ 
+</html>

@@ -1,0 +1,53 @@
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Prediction Portal</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css">
+  <link rel="stylesheet" href="/stylesheets/main.css">
+  <link rel="shortcut icon" href="#">
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.2.0/socket.io.dev.js"></script>
+</head>
+
+<body>  
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" style="text-align: center" href="#">
+      <h1>
+          <b>
+      Prediction Portal
+    </b>
+      </h1>
+    </a>
+  </nav>
+  <div class="row">
+    <h1 style="text-align: center" ><b>Prediction Portal</b></h1>
+    <div style="width: 30%; margin: 25px auto;">
+        <form action="/predict" method="POST" >
+            
+            <div class="form-group">
+                <label for="cc_num"><h4>Company Name</h4></label>
+                <input class="form-control" type="text" name="trans_date" >
+            </div>
+
+            <div class="form-group">
+                <label for="cc_num"><h4>Company_id</h4></label>
+                <input class="form-control" type="text" name="purchase_care" >
+            </div>
+            <div class="form-group">
+                <button class="btn btn-lg btn-success btn-block" ">Predict</button>
+            </div>
+        </form>
+        <br>
+         <h2> {{pred}}</h2> 
+         
+        <br>
+    </div>
+   
+</div>
+
+</body>
+<!-- <script src="js/test.js"></script> -->
+</html>
